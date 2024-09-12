@@ -45,5 +45,5 @@ Geo-balancer logs
 2024-09-12 12:28:06 192.168.65.1 - [12/Sep/2024:09:28:06 +0000] "GET /country/ HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "-" country_code=US
 ```
 
-<img src="./images/others_country.png" width="900">
-<img src="./images/uk_vpn.png" width="900">
+<img src="./images/others_country.png" width="600">
+<img src="./images/uk_vpn.png" width="600">
