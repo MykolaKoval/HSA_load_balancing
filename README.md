@@ -36,17 +36,14 @@ Only passive health checks are configured.
 
 Geo-balancer logs
 ```
-2024-09-12 12:00:52 192.168.65.1 - [12/Sep/2024:09:00:52 +0000] "GET /country/ HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "92.38.148.59" country_code=US
-2024-09-12 12:02:14 192.168.65.1 - [12/Sep/2024:09:02:14 +0000] "GET /country/ HTTP/1.1" 200 33 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "185.80.221.236" country_code=NL
-2024-09-12 12:02:19 192.168.65.1 - [12/Sep/2024:09:02:19 +0000] "GET /country/ HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "185.80.221.236" country_code=NL
-2024-09-12 12:02:19 192.168.65.1 - [12/Sep/2024:09:02:19 +0000] "GET /country/ HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "185.80.221.236" country_code=NL
-2024-09-12 12:02:20 192.168.65.1 - [12/Sep/2024:09:02:20 +0000] "GET /country/ HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "185.80.221.236" country_code=NL
-2024-09-12 12:02:26 192.168.65.1 - [12/Sep/2024:09:02:26 +0000] "GET /country/ HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "185.80.221.236" country_code=NL
-2024-09-12 12:02:37 192.168.65.1 - [12/Sep/2024:09:02:37 +0000] "GET /country/ HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "92.253.236.163" country_code=UA
-2024-09-12 12:04:16 192.168.65.1 - [12/Sep/2024:09:04:16 +0000] "GET /country/ HTTP/1.1" 200 35 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "92.253.236.163" country_code=UA
-2024-09-12 12:04:30 192.168.65.1 - [12/Sep/2024:09:04:30 +0000] "GET /country/ HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "92.253.236.163" country_code=UA
-2024-09-12 12:04:32 192.168.65.1 - [12/Sep/2024:09:04:32 +0000] "GET /country/ HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "-" country_code=US
-2024-09-12 12:04:40 192.168.65.1 - [12/Sep/2024:09:04:40 +0000] "GET /country/ HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "92.253.236.163" country_code=UA
-2024-09-12 12:04:43 192.168.65.1 - [12/Sep/2024:09:04:43 +0000] "GET /country/ HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "92.253.236.163" country_code=UA
-2024-09-12 12:04:16 2024/09/12 09:04:16 [error] 29#29: *27 connect() failed (113: No route to host) while connecting to upstream, client: 192.168.65.1, server: , request: "GET /country/ HTTP/1.1", upstream: "http://172.20.0.7:80/country/", host: "learning-cub-moved.ngrok-free.app"
+2024-09-12 12:26:41 192.168.65.1 - [12/Sep/2024:09:26:41 +0000] "GET /country/ HTTP/1.1" 200 33 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "92.253.236.163" country_code=UA
+2024-09-12 12:27:00 192.168.65.1 - [12/Sep/2024:09:27:00 +0000] "GET /country/ HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "2.58.44.54" country_code=NL
+2024-09-12 12:27:01 192.168.65.1 - [12/Sep/2024:09:27:01 +0000] "GET /country/ HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "2.58.44.54" country_code=NL
+2024-09-12 12:27:22 192.168.65.1 - [12/Sep/2024:09:27:22 +0000] "GET /country/ HTTP/1.1" 200 32 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "185.239.174.66" country_code=GB
+2024-09-12 12:27:33 192.168.65.1 - [12/Sep/2024:09:27:33 +0000] "GET /country/ HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "185.239.174.66" country_code=GB
+2024-09-12 12:28:05 192.168.65.1 - [12/Sep/2024:09:28:05 +0000] "GET /country/ HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "-" country_code=US
+2024-09-12 12:28:06 192.168.65.1 - [12/Sep/2024:09:28:06 +0000] "GET /country/ HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" "-" country_code=US
 ```
+
+<img src="./images/others_country.png" width="900">
+<img src="./images/uk_vpn.png" width="900">
