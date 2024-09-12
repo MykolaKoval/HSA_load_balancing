@@ -1,0 +1,13 @@
+server {
+    listen 80;
+
+    location /country {
+        index ${COUNTRY_CODE}.json;
+        alias /data/www/;
+    }
+
+    location /health {
+        index health_status.json;
+        alias /data/www/;
+    }
+}

@@ -1,0 +1,75 @@
+version: '3.9'
+services:
+
+  geo-balancer:
+    image: anroe/nginx-geoip2:1.22.1-geoip2-3.4
+    ports:
+      - 8080:80
+    volumes:
+      - ./geoip/GeoLite2-Country.mmdb:/etc/nginx/GeoLite2-Country.mmdb
+      - ./nginx-ext/nginx.conf:/etc/nginx/nginx.conf
+    networks:
+      - backend
+
+  balancer:
+    image: nginx:latest
+    ports:
+      - 8081:80
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    networks:
+      - backend
+
+  uk-server:
+    image: nginx:latest
+    environment:
+      - COUNTRY_CODE=uk
+    volumes:
+      - ./nginx/templates:/etc/nginx/templates
+      - ./data/:/data/www
+    networks:
+      - backend
+
+  us1-server:
+    image: nginx:latest
+    environment:
+      - COUNTRY_CODE=us
+    volumes:
+      - ./nginx/templates:/etc/nginx/templates
+      - ./data/:/data/www
+    networks:
+      - backend
+
+  us2-server:
+    image: nginx:latest
+    environment:
+      - COUNTRY_CODE=us
+    volumes:
+      - ./nginx/templates:/etc/nginx/templates
+      - ./data/:/data/www
+    networks:
+      - backend
+
+  others-server:
+    image: nginx:latest
+    environment:
+      - COUNTRY_CODE=others
+    volumes:
+      - ./nginx/templates:/etc/nginx/templates
+      - ./data/:/data/www
+    networks:
+      - backend
+
+  backup-server:
+    image: nginx:latest
+    environment:
+      - COUNTRY_CODE=backup
+    volumes:
+      - ./nginx/templates:/etc/nginx/templates
+      - ./data/:/data/www
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
